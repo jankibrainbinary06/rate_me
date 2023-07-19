@@ -19,5 +19,16 @@ class StringRes {
   static const enterCode = "Enter your code";
   static const resend = "RESEND";
   static const submit = "SUBMIT";
+  static const welcome = "Welcome to RateMe.";
+  static const iAgree = "i agree";
+  static const pleaseFollow = "Please follow our House Rules.";
+  static const beYourself = "Be yourself.";
+  static const makeSure = "Make sure your photos, age, and bio are true to who you are.";
+  static const playItCool = "Play it cool.";
+  static const respect = "Respect others and treat them as you would like to be treated";
+  static const staySafe = "Stay safe.";
+  static const dontBe = "Don’t be too quick to give out personal information. Date Safely";
+  static const beProactive = "Be proactive.";
+  static const always = "Always report bad behavior";
 
 }

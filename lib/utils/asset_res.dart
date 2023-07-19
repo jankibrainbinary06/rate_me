@@ -24,6 +24,7 @@ static const phone = "${images}Phone Logo.png";
 static const apple = "${images}Apple Logo.png";
 static const backGround = "${images}backGround.png";
 static const otpBg = "${images}otpBg.png";
+static const welcomeBg = "${images}welcomeBg.png";
 
 
 }

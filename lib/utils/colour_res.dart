@@ -12,6 +12,7 @@ static const FF373737 = Color(0xFF373737);
 static const color606060 = Color(0xFF606060);
 static const color8C8C8C = Color(0xFF8C8C8C);
 static const color8E8E8E = Color(0xFF8E8E8E);
+static const color555555 = Color(0xFF555555);
 static const commonButtonColor = Color(0xFFF2609E);
 
 }

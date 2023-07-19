@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_verification_code/flutter_verification_code.dart';
 import 'package:get/get.dart';
 import 'package:rate_me/screens/otp_screen/otp_contoller.dart';
+import 'package:rate_me/screens/welcome_screen/welcome_screen.dart';
 import 'package:rate_me/utils/asset_res.dart';
 import 'package:rate_me/utils/colour_res.dart';
 import 'package:rate_me/utils/font_res.dart';
@@ -104,7 +105,7 @@ class OtpScreen extends StatelessWidget {
                                 elevation: 5,
                                 child: GestureDetector(
                                   onTap:(){
-                                    Get.to(()=> OtpScreen());
+                                    Get.to(()=> WelcomeScreen());
                                   },
                                   child: Container(
                                     height:  45,
@@ -114,7 +115,8 @@ class OtpScreen extends StatelessWidget {
                                         color: ColorRes.commonButtonColor,
                                         borderRadius: BorderRadius.circular(30)
                                     ),
-                                    child:  Text(StringRes.verify.toUpperCase(),style:
+                                    child:  Text(StringRes.submit.toUpperCase(),
+                                      style:
                                     const TextStyle(
                                         fontSize: 15,
                                         fontFamily: FontRes.poppinsMedium,
