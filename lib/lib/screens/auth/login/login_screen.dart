@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:rate_me/lib/screens/phone_verification/screen/phone_varification_screen.dart';
 import 'package:rate_me/screens/auth/login/login_controller.dart';
-import 'package:rate_me/screens/phone_verification/screen/phone_varification_screen.dart';
 import 'package:rate_me/utils/asset_res.dart';
 import 'package:rate_me/utils/colour_res.dart';
 import 'package:rate_me/utils/string_res.dart';

@@ -20,9 +20,4 @@ class StringRes {
   static const resend = "RESEND";
   static const submit = "SUBMIT";
 
-
-
-  //==add photo
-  static const addPhotos = "Add Photos";
-  static const addAtleast = "Add at least 2 photos to continue";
 }

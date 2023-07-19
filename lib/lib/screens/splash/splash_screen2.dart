@@ -27,6 +27,6 @@ class _SplashScreen2State extends State<SplashScreen2> {
       width: Get.width * 1,
       child:  Image.asset(AssetRes.first,fit: BoxFit.cover),
     );
-    
+
   }
 }
