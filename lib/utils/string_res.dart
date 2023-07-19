@@ -9,4 +9,9 @@ class StringRes {
   static const loginWithPhone = "LOG IN WITH PHONE";
   static const loginWithApple = "LOG IN WITH APPLE";
   static const dontHaveAccount = "Don’t have account?";
+
+
+  //==add photo
+  static const addPhotos = "Add Photos";
+  static const addAtleast = "Add at least 2 photos to continue";
 }
