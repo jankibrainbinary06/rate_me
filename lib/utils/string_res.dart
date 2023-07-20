@@ -24,5 +24,17 @@ class StringRes {
 
   //==add photo
   static const addPhotos = "Add Photos";
+
   static const addAtleast = "Add at least 2 photos to continue";
+  static const Continue = "CONTINUE";
+
+
+  //=== video screen
+
+  static const walkThrough = "Walkthrough Video";
+  static const thisIs = "This is a walkthrough tutorial on how all  the features in the app work. Pay attention   in order to understand all functionality  of the RateMe app.";
+
+
+
+
 }

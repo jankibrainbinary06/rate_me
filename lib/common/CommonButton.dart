@@ -24,7 +24,7 @@ import 'package:rate_me/utils/font_res.dart';
             borderRadius: BorderRadius.circular(30)
         ),
         child:  Text("$text",style:
-        TextStyle(
+        const TextStyle(
             fontSize: 15,
             fontFamily: FontRes.poppinsMedium,
             fontWeight: FontWeight.w500,

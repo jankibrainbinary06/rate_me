@@ -10,7 +10,7 @@ class LoginController extends GetxController{
       height: 45,
       width: Get.width * 0.8,
       decoration: const BoxDecoration(
-        color: ColorRes.FFFFFF,
+        color: ColorRes.colorFFFFFF,
         borderRadius: BorderRadius.all(Radius.circular(25)),
 
         boxShadow: [
@@ -30,7 +30,7 @@ class LoginController extends GetxController{
             child: Image.asset(image,scale: scale),
           ),
           SizedBox(width: Get.width * 0.08),
-          Text(title,style: medium(color: ColorRes.FF373737,fontSize: 14),)
+          Text(title,style: medium(color: ColorRes.colorFF373737,fontSize: 14),)
         ],
       ),
     );
@@ -42,10 +42,10 @@ class LoginController extends GetxController{
       children: [
         Text(
             title,
-            style : const TextStyle(fontSize: 12,color: ColorRes.FFFFFF,fontFamily: "Poppins-Medium",shadows: [Shadow(blurRadius: 10.0,color: Colors.black12,offset: Offset(0, 5))]),
+            style : const TextStyle(fontSize: 12,color: ColorRes.colorFFFFFF,fontFamily: "Poppins-Medium",shadows: [Shadow(blurRadius: 10.0,color: Colors.black12,offset: Offset(0, 5))]),
         ),
         SizedBox(width: Get.width * 0.01),
-        Text(title2, style: const TextStyle(fontSize: 12,color: ColorRes.FFFFFF, fontWeight: FontWeight.bold,decoration: TextDecoration.underline)),
+        Text(title2, style: const TextStyle(fontSize: 12,color: ColorRes.colorFFFFFF, fontWeight: FontWeight.bold,decoration: TextDecoration.underline)),
       ],
     );
   }

@@ -15,7 +15,7 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: ColorRes.F2609E,
+      backgroundColor: ColorRes.colorF2609E,
       body: SafeArea(
         child: Container(
           height: Get.height,
@@ -44,7 +44,7 @@ class LoginScreen extends StatelessWidget {
                   const Text("Policy",
                       style: TextStyle(
                           fontSize: 12,
-                          color: ColorRes.FFFFFF,
+                          color: ColorRes.colorFFFFFF,
                           fontWeight: FontWeight.bold,
                           decoration: TextDecoration.underline,
                           shadows: [
@@ -57,7 +57,7 @@ class LoginScreen extends StatelessWidget {
                   const Text("and",
                       style: TextStyle(
                           fontSize: 12,
-                          color: ColorRes.FFFFFF,
+                          color: ColorRes.colorFFFFFF,
                           fontFamily: "Poppins-Medium",
                           shadows: [
                             Shadow(
@@ -69,7 +69,7 @@ class LoginScreen extends StatelessWidget {
                   const Text("Cookies Policy.",
                       style: TextStyle(
                           fontSize: 12,
-                          color: ColorRes.FFFFFF,
+                          color: ColorRes.colorFFFFFF,
                           fontWeight: FontWeight.bold,
                           decoration: TextDecoration.underline,
                           shadows: [
@@ -95,12 +95,12 @@ class LoginScreen extends StatelessWidget {
                 children: [
                   const Text(StringRes.dontHaveAccount,
                       style: TextStyle(
-                          color: ColorRes.FFFFFF,
+                          color: ColorRes.colorFFFFFF,
                           fontSize: 13,
                           shadows: [
                             Shadow(
                                 blurRadius: 10.0,
-                                color: ColorRes.FF373737,
+                                color: ColorRes.colorFF373737,
                                 offset: Offset(1, 1))
                           ])),
                   SizedBox(width: Get.width * 0.01),
@@ -111,12 +111,12 @@ class LoginScreen extends StatelessWidget {
                     child: const Text("Sign Up",
                         style: TextStyle(
                             fontSize: 13,
-                            color: ColorRes.FFFFFF,
+                            color: ColorRes.colorFFFFFF,
                             fontWeight: FontWeight.bold,
                             shadows: [
                               Shadow(
                                   blurRadius: 20.0,
-                                  color: ColorRes.FF373737,
+                                  color: ColorRes.colorFF373737,
                                   offset: Offset(1, 1))
                             ])),
                   ),

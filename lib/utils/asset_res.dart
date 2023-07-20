@@ -10,6 +10,7 @@ class AssetRes {
   static const  callIcon = "${icons}Phone Logo.png";
   static const  appleIcon = "${icons}Apple Logo.png";
   static const  arrowLeft = "${icons}arrow-left.png";
+  static const  videoButton = "${icons}video_button.png";
 
 
 
