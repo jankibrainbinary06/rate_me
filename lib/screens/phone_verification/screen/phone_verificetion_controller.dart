@@ -1,10 +1,31 @@
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
+import 'package:rate_me/screens/otp_screen/otp_screen.dart';
 
 class PhoneVerificationController extends GetxController {
   TextEditingController phoneController = TextEditingController();
   String countriesCode = "";
   String countriesDileCode = "";
+  bool? isValidate  = false;
+
+   validation(String value){
+     if(value.isEmpty){
+       isValidate = false;
+     }
+     else{
+       isValidate = true;
+       Get.to(()=> OtpScreen());
+       update(["country"]);
+     }
+     update(["country"]);
+   }
+  @override
+  void onInit() {
+    isValidate = true;
+    // TODO: implement onInit
+    super.onInit();
+  }
+
   List<Map<String, String>> allCountries = [
     {"name": "Afghanistan", "dial_code": "+93", "code": "AF"},
     {"name": "Aland Islands", "dial_code": "+358", "code": "AX"},
@@ -305,6 +326,5 @@ class PhoneVerificationController extends GetxController {
     {"name": "Zambia", "dial_code": "+260", "code": "ZM"},
     {"name": "Zimbabwe", "dial_code": "+263", "code": "ZW"}
   ];
-
 
 }

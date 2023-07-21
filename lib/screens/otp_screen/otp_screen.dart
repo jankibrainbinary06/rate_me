@@ -20,13 +20,28 @@ class OtpScreen extends StatelessWidget {
         Expanded(
             child: Stack(
           children: [
-            SizedBox(
-              height: Get.height,
-              width: Get.width,
-              child: Image.asset(
-                AssetRes.otpBg,
-                fit: BoxFit.fill,
+            Container(
+              height: Get.height * 1,
+              width: Get.width * 1,
+              decoration: BoxDecoration(
+                  image: DecorationImage(
+
+                    image: AssetImage(
+                      AssetRes.otpBg,
+                    ),
+                    fit: BoxFit.fill,
+                    // onError: (object , error){
+                    //   Image.asset(
+                    //         AssetRes.otpBg,
+                    //         fit: BoxFit.fill,
+                    //       );
+                    // }
+                  )
               ),
+              // child: Image.asset(
+              //   AssetRes.otpBg,
+              //   fit: BoxFit.fill,
+              // ),
             ),
             SizedBox(
               height: Get.height,

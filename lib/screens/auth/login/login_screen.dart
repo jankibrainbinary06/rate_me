@@ -48,7 +48,7 @@ class LoginScreen extends StatelessWidget {
                           const Text("Policy",
                               style: TextStyle(
                                   fontSize: 12,
-                                  color: ColorRes.FFFFFF,
+                                  color: ColorRes.colorFFFFFF,
                                   fontWeight: FontWeight.bold,
                                   decoration: TextDecoration.underline,
                                   shadows: [
@@ -61,7 +61,7 @@ class LoginScreen extends StatelessWidget {
                           const Text("and",
                               style: TextStyle(
                                   fontSize: 12,
-                                  color: ColorRes.FFFFFF,
+                                  color: ColorRes.colorFFFFFF,
                                   fontFamily: "Poppins-Medium",
                                   shadows: [
                                     Shadow(
@@ -73,7 +73,7 @@ class LoginScreen extends StatelessWidget {
                           const Text("Cookies Policy.",
                               style: TextStyle(
                                   fontSize: 12,
-                                  color: ColorRes.FFFFFF,
+                                  color: ColorRes.colorFFFFFF,
                                   fontWeight: FontWeight.bold,
                                   decoration: TextDecoration.underline,
                                   shadows: [
@@ -99,7 +99,7 @@ class LoginScreen extends StatelessWidget {
                         children: [
                           const Text(StringRes.dontHaveAccount,
                               style: TextStyle(
-                                  color: ColorRes.FFFFFF,
+                                  color: ColorRes.colorFFFFFF,
                                   fontSize: 13,
                                   shadows: [
                                     Shadow(
@@ -115,7 +115,7 @@ class LoginScreen extends StatelessWidget {
                             child:  Text("Sign Up",
                                 style: TextStyle(
                                     fontSize: 13,
-                                    color: ColorRes.FFFFFF,
+                                    color: ColorRes.colorFFFFFF,
                                     fontWeight: FontWeight.bold,
                                     shadows: [
                                       Shadow(

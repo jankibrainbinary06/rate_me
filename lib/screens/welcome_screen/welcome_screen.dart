@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_verification_code/flutter_verification_code.dart';
 import 'package:get/get.dart';
 import 'package:rate_me/screens/otp_screen/otp_contoller.dart';
+import 'package:rate_me/screens/profile_screen/name_screen.dart';
 import 'package:rate_me/utils/asset_res.dart';
 import 'package:rate_me/utils/colour_res.dart';
 import 'package:rate_me/utils/font_res.dart';
@@ -19,12 +20,19 @@ class WelcomeScreen extends StatelessWidget {
         Expanded(
             child: Stack(
               children: [
-                SizedBox(
+                Container(
                   height: Get.height,
                   width: Get.width,
-                  child: Image.asset(
-                    AssetRes.welcomeBg,
-                    fit: BoxFit.fill,
+                  decoration: const BoxDecoration(
+                    gradient:    LinearGradient(
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                      colors: [
+                        ColorRes.welcome1,
+                        ColorRes.welcome2,
+                        ColorRes.welcome1,
+                      ],
+                    ),
                   ),
                 ),
                 SizedBox(
@@ -50,8 +58,7 @@ class WelcomeScreen extends StatelessWidget {
                                   children: [
                                     Padding(
                                       padding: const EdgeInsets.only(top: 10),
-                                      child: InkWell(
-                                        splashFactory: NoSplash.splashFactory,
+                                      child: GestureDetector(
                                         onTap: () {
                                           Get.back();
                                         },
@@ -181,13 +188,13 @@ class WelcomeScreen extends StatelessWidget {
                                                   fontFamily: FontRes.poppinsRegular,
                                                   fontWeight: FontWeight.w400),
                                             ),
-                                            SizedBox(height: Get.height * 0.03,),
+                                            SizedBox(height: Get.height * 0.15,),
                                             Card(
                                               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
                                               elevation: 5,
                                               child: GestureDetector(
                                                 onTap:(){
-                                                  // Get.to(()=> OtpScreen());
+                                                  Get.to(()=> NameScreenUser());
                                                 },
                                                 child: Container(
                                                   height:  45,

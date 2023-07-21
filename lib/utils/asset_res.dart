@@ -27,6 +27,15 @@ static const apple = "${images}Apple Logo.png";
 static const backGround = "${images}backGround.png";
 static const otpBg = "${images}otpBg.png";
 static const welcomeBg = "${images}welcomeBg.png";
+static const nameImageBg = "${images}imageBgName.png";
+static const dobBg = "${images}DOBbg.png";
+static const genderBgImg = "${images}genderImageBg.png";
+static const face1 = "${images}blackFace1.png";
+static const face2 = "${images}pinckface2.png";
+static const person = "${images}personBg1.png";
+static const schoolBg = "${images}schoolBg.png";
+static const schoolImage = "${images}school_Img.png";
+static const schoolFace = "${images}schoolFace.png";
 
 
 }

@@ -30,5 +30,15 @@ class StringRes {
   static const dontBe = "Don’t be too quick to give out personal information. Date Safely";
   static const beProactive = "Be proactive.";
   static const always = "Always report bad behavior";
+  static const myNameIs = "My first name is";
+  static const sherry = "Sherry Walker";
+  static const continueText = "CONTINUE";
+  static const birthday = "My birthday is";
+  static const myGender = "My gender is";
+  static const selectGender = "SELECT GENDER";
+  static const mySexual = "My sexual orientation is";
+  static const emailIs = "My school email is";
+  static const schoolEmail = "School Email";
+  static const select = "SELECT";
 
 }
