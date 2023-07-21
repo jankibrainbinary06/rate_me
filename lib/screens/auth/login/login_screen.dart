@@ -10,7 +10,7 @@ import 'package:rate_me/utils/text_style.dart';
 class LoginScreen extends StatelessWidget {
   LoginScreen({super.key});
 
-  final LoginController loginController = Get.put(LoginController());
+  LoginController loginController = Get.put(LoginController());
 
   @override
   Widget build(BuildContext context) {
@@ -136,7 +136,7 @@ class LoginScreen extends StatelessWidget {
         ))
       ],
     );
-      
+
 
   }
 }

@@ -11,6 +11,7 @@ class AssetRes {
   static const  appleIcon = "${icons}Apple Logo.png";
   static const  arrowLeft = "${icons}arrow-left.png";
   static const  dropDownIcon = "${icons}dropDownIcon.png";
+  static const  videoButton = "${icons}video_button.png";
 
 
 
@@ -24,6 +25,7 @@ static const first = "${images}13 Pro - 1.png";
 static const google = "${images}Google Logo.png";
 static const phone = "${images}Phone Logo.png";
 static const apple = "${images}Apple Logo.png";
+static const gradient = "${images}gradient.png";
 static const backGround = "${images}backGround.png";
 static const otpBg = "${images}otpBg.png";
 static const welcomeBg = "${images}welcomeBg.png";

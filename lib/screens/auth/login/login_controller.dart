@@ -47,6 +47,7 @@ class LoginController extends GetxController{
                 blurRadius: 5,
                 color: Colors.black26,
                 offset: Offset(0, 4))]),
+            style : const TextStyle(fontSize: 12,color: ColorRes.colorFFFFFF,fontFamily: "Poppins-Medium",shadows: [Shadow(blurRadius: 10.0,color: Colors.black12,offset: Offset(0, 5))]),
         ),
         SizedBox(width: Get.width * 0.01),
         Text(title2, style: const TextStyle(fontSize: 12,color: ColorRes

@@ -24,5 +24,8 @@ static const sexualBg = Color(0xFFFFC0DB);
 static const schoolBg2 = Color(0xFFFFC7EF);
 // static const schoolBg3 = Color(0xFFFFC7EF);
 // static const schoolBg4 = Color(0xFFFFC7EF);
+static const color303030 = Color(0xFF303030);
+static const colorC6C6C6 = Color(0xFFC6C6C6);
+
 
 }

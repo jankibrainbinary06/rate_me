@@ -41,6 +41,8 @@ dependencies:
   country_code_picker: ^3.0.0
   pinput: ^2.2.31
   flutter_verification_code: ^1.1.6
+  image_picker: ^1.0.1
+  video_player: ^2.7.0
 
 dev_dependencies:
   flutter_test:
