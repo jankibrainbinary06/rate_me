@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_verification_code/flutter_verification_code.dart';
 import 'package:get/get.dart';
+import 'package:rate_me/screens/add_photo_screen/add_photo_screen.dart';
 import 'package:rate_me/screens/otp_screen/otp_contoller.dart';
 import 'package:rate_me/screens/welcome_screen/welcome_screen.dart';
 import 'package:rate_me/utils/asset_res.dart';
@@ -9,8 +10,8 @@ import 'package:rate_me/utils/font_res.dart';
 import 'package:rate_me/utils/string_res.dart';
 
 class OtpScreen extends StatelessWidget {
-  OtpScreen({super.key});
-
+  OtpScreen({super.key, this.type});
+  final String? type;
   final OtpContoller otpContoller = Get.put(OtpContoller());
 
   @override
@@ -25,23 +26,11 @@ class OtpScreen extends StatelessWidget {
               width: Get.width * 1,
               decoration: BoxDecoration(
                   image: DecorationImage(
-
-                    image: AssetImage(
-                      AssetRes.otpBg,
-                    ),
-                    fit: BoxFit.fill,
-                    // onError: (object , error){
-                    //   Image.asset(
-                    //         AssetRes.otpBg,
-                    //         fit: BoxFit.fill,
-                    //       );
-                    // }
-                  )
-              ),
-              // child: Image.asset(
-              //   AssetRes.otpBg,
-              //   fit: BoxFit.fill,
-              // ),
+                image: AssetImage(
+                  AssetRes.otpBg,
+                ),
+                fit: BoxFit.fill,
+              )),
             ),
             SizedBox(
               height: Get.height,
@@ -58,13 +47,13 @@ class OtpScreen extends StatelessWidget {
                     body: SafeArea(
                       child: Padding(
                         padding:
-                            EdgeInsets.symmetric(horizontal: Get.width * 0.06),
+                            EdgeInsets.symmetric(horizontal: Get.width * 0.058),
                         child: SingleChildScrollView(
                           physics: NeverScrollableScrollPhysics(),
                           child: Column(
                             children: [
                               SizedBox(
-                                height: Get.height * 0.02,
+                                height: Get.height * 0.035,
                               ),
                               Row(
                                 children: [
@@ -75,7 +64,7 @@ class OtpScreen extends StatelessWidget {
                                     },
                                     child: Image.asset(
                                       AssetRes.arrowLeft,
-                                      width: 26,
+                                      width: 25,
                                     ),
                                   ),
                                   const Spacer(),
@@ -100,43 +89,56 @@ class OtpScreen extends StatelessWidget {
                                   margin: EdgeInsets.symmetric(
                                       horizontal: Get.width * 0.02),
                                   onEditing: (value) {}),
-
-                              SizedBox(height: Get.height * 0.04,),
-                              Text(StringRes.resend,style: TextStyle(
-                                  fontSize: 15,
-                                  // decoration: TextDecoration.underline,
-                                  shadows: [Shadow(
-                                    color: Colors.grey.shade200,blurRadius: 5
-                                  )],
-                                  fontFamily: FontRes.poppinsRegular,
-                                  fontWeight: FontWeight.w500,
-                                  color: ColorRes.color8E8E8E
-                              ),),
+                              SizedBox(
+                                height: Get.height * 0.04,
+                              ),
+                              Text(
+                                StringRes.resend,
+                                style: TextStyle(
+                                    fontSize: 15,
+                                    // decoration: TextDecoration.underline,
+                                    shadows: [
+                                      Shadow(
+                                          color: Colors.grey.shade200,
+                                          blurRadius: 5)
+                                    ],
+                                    fontFamily: FontRes.poppinsRegular,
+                                    fontWeight: FontWeight.w500,
+                                    color: ColorRes.color8E8E8E),
+                              ),
                               SizedBox(
                                 height: Get.height * 0.15,
                               ),
                               Card(
-                                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
+                                shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(30)),
                                 elevation: 5,
                                 child: GestureDetector(
-                                  onTap:(){
-                                    Get.to(()=> WelcomeScreen());
+                                  onTap: () {
+                                    if(type == StringRes.emailIs){
+                                      Get.to(() => AddPhotoScreen());
+                                    }
+                                    else{
+                                      Get.to(() => WelcomeScreen());
+                                    }
+
                                   },
                                   child: Container(
-                                    height:  45,
+                                    height: 45,
                                     width: 300,
                                     alignment: Alignment.center,
                                     decoration: BoxDecoration(
                                         color: ColorRes.commonButtonColor,
-                                        borderRadius: BorderRadius.circular(30)
+                                        borderRadius:
+                                            BorderRadius.circular(30)),
+                                    child: Text(
+                                      StringRes.submit.toUpperCase(),
+                                      style: const TextStyle(
+                                          fontSize: 15,
+                                          fontFamily: FontRes.poppinsMedium,
+                                          fontWeight: FontWeight.w500,
+                                          color: ColorRes.white),
                                     ),
-                                    child:  Text(StringRes.submit.toUpperCase(),
-                                      style:
-                                    const TextStyle(
-                                        fontSize: 15,
-                                        fontFamily: FontRes.poppinsMedium,
-                                        fontWeight: FontWeight.w500,
-                                        color: ColorRes.white),),
                                   ),
                                 ),
                               )

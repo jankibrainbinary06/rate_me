@@ -111,8 +111,7 @@ class SchoolScreens extends StatelessWidget {
                                 text: StringRes.verify,
                                 onTap: (){
                                   return controller.validation(
-                                      controller
-                                          .emailContoller.text);
+                                      controller.emailContoller.text);
                                 }
                               ),
                             ],
