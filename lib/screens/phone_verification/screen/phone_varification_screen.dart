@@ -170,7 +170,7 @@ class PhoneVerificationScreen extends StatelessWidget {
                                                 width: Get.width * 0.05,
                                               ),
                                               SizedBox(
-                                                width: Get.width * 0.53,
+                                                width: Get.width * 0.55,
                                                 height: Get.height * 0.12,
                                                 child: Column(
                                                   crossAxisAlignment:
@@ -286,7 +286,7 @@ class PhoneVerificationScreen extends StatelessWidget {
                                               },
                                               child: Container(
                                                 height: 45,
-                                                width: 300,
+                                                width: Get.width * 0.85,
                                                 alignment: Alignment.center,
                                                 decoration: BoxDecoration(
                                                     color: ColorRes

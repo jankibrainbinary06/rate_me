@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:rate_me/common/CommonButton.dart';
 import 'package:rate_me/common/appBar.dart';
 import 'package:rate_me/screens/profile_screen/name_controller.dart';
 import 'package:rate_me/utils/asset_res.dart';
@@ -131,41 +132,47 @@ class NameScreenUser extends StatelessWidget {
 
                                             ),
                                         SizedBox(height: Get.height * 0.07,),
-                                        Card(
-                                          shape: RoundedRectangleBorder(
-                                              borderRadius:
-                                              BorderRadius.circular(30)),
-                                          elevation: 5,
-                                          child: GestureDetector(
-                                            onTap: () {
-                                              return controller.validation(
-                                                  controller
-                                                      .nameController.text);
-                                            },
-                                            child: Container(
-                                              height: 45,
-                                              // width: 300,
-                                              alignment: Alignment.center,
-                                              decoration: BoxDecoration(
-                                                  color: ColorRes
-                                                      .commonButtonColor,
-                                                  borderRadius:
-                                                  BorderRadius.circular(
-                                                      30)),
-                                              child: Text(
-                                                StringRes.continueText
-                                                    .toUpperCase(),
-                                                style: const TextStyle(
-                                                    fontSize: 15,
-                                                    fontFamily:
-                                                    FontRes.poppinsMedium,
-                                                    fontWeight:
-                                                    FontWeight.w500,
-                                                    color: ColorRes.white),
-                                              ),
-                                            ),
-                                          ),
-                                        )
+                                        commonButton(
+                                          onTap: (){
+                                            return controller.validation(
+                                                controller
+                                                    .nameController.text);
+                                          },
+                                             text: StringRes.continueText
+                                        ),
+                                        // Card(
+                                        //   shape: RoundedRectangleBorder(
+                                        //       borderRadius:
+                                        //       BorderRadius.circular(30)),
+                                        //   elevation: 5,
+                                        //   child: GestureDetector(
+                                        //     onTap: () {
+                                        //
+                                        //     },
+                                        //     child: Container(
+                                        //       height: 45,
+                                        //       // width: 300,
+                                        //       alignment: Alignment.center,
+                                        //       decoration: BoxDecoration(
+                                        //           color: ColorRes
+                                        //               .commonButtonColor,
+                                        //           borderRadius:
+                                        //           BorderRadius.circular(
+                                        //               30)),
+                                        //       child: Text(
+                                        //         StringRes.continueText
+                                        //             .toUpperCase(),
+                                        //         style: const TextStyle(
+                                        //             fontSize: 15,
+                                        //             fontFamily:
+                                        //             FontRes.poppinsMedium,
+                                        //             fontWeight:
+                                        //             FontWeight.w500,
+                                        //             color: ColorRes.white),
+                                        //       ),
+                                        //     ),
+                                        //   ),
+                                        // )
                                       ],
                                     ),
                                   ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:rate_me/utils/colour_res.dart';
 import 'package:rate_me/utils/font_res.dart';
 
@@ -17,7 +18,7 @@ commonButton(
       onTap: onTap,
       child: Container(
         height: height ?? 45,
-        width: width ?? 300,
+        width: width ??  Get.width * 0.85,
         alignment: Alignment.center,
         decoration: BoxDecoration(
             color: ColorRes.commonButtonColor,

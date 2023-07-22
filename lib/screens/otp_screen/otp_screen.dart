@@ -125,7 +125,7 @@ class OtpScreen extends StatelessWidget {
                                   },
                                   child: Container(
                                     height: 45,
-                                    width: 300,
+                                    width:  Get.width * 0.85,
                                     alignment: Alignment.center,
                                     decoration: BoxDecoration(
                                         color: ColorRes.commonButtonColor,
