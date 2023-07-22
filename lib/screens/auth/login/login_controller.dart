@@ -10,24 +10,27 @@ class LoginController extends GetxController{
       height: 45,
       width: Get.width * 0.8,
       decoration: const BoxDecoration(
-        color: ColorRes.FFFFFF,
+        color: ColorRes.colorFFFFFF,
         borderRadius: BorderRadius.all(Radius.circular(25)),
 
         boxShadow: [
           BoxShadow(
-              offset: Offset(0, 5),
-              blurRadius: 8,
+              offset: Offset(0, 3),
+              blurRadius: 3,
               // spreadRadius: 5,
-              color: Colors.black38,
+              color: Colors.black26,
           ),
         ],
       ),
       child: Row(
         children: [
           const SizedBox(width: 15),
-          Image.asset(image,scale: scale),
+          Padding(
+            padding: const EdgeInsets.all(12.0),
+            child: Image.asset(image,scale: scale),
+          ),
           SizedBox(width: Get.width * 0.08),
-          Text(title,style: medium(color: ColorRes.FF373737,fontSize: 14),)
+          Text(title,style: medium(color: ColorRes.colorFF373737,fontSize: 14),)
         ],
       ),
     );
@@ -39,10 +42,19 @@ class LoginController extends GetxController{
       children: [
         Text(
             title,
-            style : const TextStyle(fontSize: 12,color: ColorRes.FFFFFF,fontFamily: "Poppins-Medium",shadows: [Shadow(blurRadius: 10.0,color: Colors.black12,offset: Offset(0, 5))]),
+            style : const TextStyle(fontSize: 12,color: ColorRes.colorFFFFFF,
+                fontFamily: "Poppins-Medium",shadows: [Shadow(
+                blurRadius: 5,
+                color: Colors.black26,
+                offset: Offset(0, 4))]),
+
         ),
         SizedBox(width: Get.width * 0.01),
-        Text(title2, style: const TextStyle(fontSize: 12,color: ColorRes.FFFFFF, fontWeight: FontWeight.bold,decoration: TextDecoration.underline)),
+        Text(title2, style: const TextStyle(fontSize: 12,color: ColorRes
+            .colorFFFFFF, fontWeight: FontWeight.bold,decoration: TextDecoration.underline,shadows: [Shadow(
+            blurRadius: 5,
+            color: Colors.black26,
+            offset: Offset(0, 4))])),
       ],
     );
   }

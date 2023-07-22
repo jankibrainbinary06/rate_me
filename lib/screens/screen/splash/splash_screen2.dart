@@ -22,14 +22,11 @@ class _SplashScreen2State extends State<SplashScreen2> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: SafeArea(
-        child: SizedBox(
-          height: Get.height,
-          width: Get.width,
-          child: Image.asset(AssetRes.first, fit: BoxFit.cover),
-        ),
-      ),
+    return SizedBox(
+      height: Get.height * 1,
+      width: Get.width * 1,
+      child:  Image.asset(AssetRes.first,fit: BoxFit.cover),
     );
+    
   }
 }
