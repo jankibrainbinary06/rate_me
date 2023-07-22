@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:rate_me/screens/splash/splash_screen.dart';
+import 'package:rate_me/screens/screen/Dashboard/dashboard_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,9 +11,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const GetMaterialApp(
+    return  GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SplashScreen(),
+      home: DashBoardScreen(),
     );
   }
 }
+
