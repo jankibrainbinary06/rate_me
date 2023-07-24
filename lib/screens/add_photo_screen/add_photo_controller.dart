@@ -47,12 +47,9 @@ class AddPhotoController extends GetxController{
 
                       } else if (i == 3) {
                         photoPath4 = image.path.toString();
-
                       }
                     }
-
                     update(["imagePicker"]);
-
                   },
                   child: ListTile(
                     leading: const Icon(
