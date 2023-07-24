@@ -14,25 +14,6 @@ class AddPhotoController extends GetxController {
   String photoPath3 = '';
   String photoPath4 = '';
 
-  onTapButton() {
-    if (photoPath1 != "" && photoPath2 != "" ||
-        photoPath1 != "" && photoPath3 != "" ||
-        photoPath1 != "" && photoPath4 != "" ||
-        photoPath2 != "" && photoPath1 != "" ||
-        photoPath2 != "" && photoPath3 != "" ||
-        photoPath2 != "" && photoPath4 != "" ||
-        photoPath3 != "" && photoPath1 != "" ||
-        photoPath3 != "" && photoPath2 != "" ||
-        photoPath3 != "" && photoPath4 != "" ||
-        photoPath4 != "" && photoPath1 != "" ||
-        photoPath4 != "" && photoPath2 != "" ||
-        photoPath4 != "" && photoPath3 != "") {
-      Get.to(() => WalkThroughVideoScreen());
-    } else {
-     return showErrorToast(msg: "Please add 2 photos required!");
-    }
-    controller.update(["imagePicker"]);
-  }
 
   showErrorToast({String? msg}){
     return Fluttertoast.showToast(
@@ -69,8 +50,7 @@ class AddPhotoController extends GetxController {
                     onTap: () async {
                       Get.back();
                       final ImagePicker picker = ImagePicker();
-                      final image =
-                          await picker.pickImage(source: ImageSource.camera);
+                      final image = await picker.pickImage(source: ImageSource.camera);
                       if (image != null) {
                         if (i == 0) {
                           photoPath1 = image.path.toString();
@@ -82,7 +62,6 @@ class AddPhotoController extends GetxController {
                           photoPath4 = image.path.toString();
                         }
                       }
-
                       update(["imagePicker"]);
                     },
                     child: const ListTile(
@@ -104,11 +83,11 @@ class AddPhotoController extends GetxController {
                     onTap: () async {
                       Get.back();
                       final ImagePicker picker = ImagePicker();
-                      final image =
-                          await picker.pickImage(source: ImageSource.gallery);
+                      final image = await picker.pickImage(source: ImageSource.gallery);
                       if (image != null) {
                         if (i == 0) {
                           photoPath1 = image.path.toString();
+                          print(photoPath1);
                         } else if (i == 1) {
                           photoPath2 = image.path.toString();
                         } else if (i == 2) {
@@ -117,8 +96,7 @@ class AddPhotoController extends GetxController {
                           photoPath4 = image.path.toString();
                         }
                       }
-
-                      update(["imagePicker"]);
+                     update(["imagePicker"]);
                     },
                     child: const ListTile(
                       leading: Icon(

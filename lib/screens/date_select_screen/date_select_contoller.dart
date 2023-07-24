@@ -11,7 +11,7 @@ class DobController extends GetxController {
       context: context,
       initialDate: DateTime.now(),
       firstDate: DateTime(1900),
-      lastDate: DateTime(2030),
+      lastDate: DateTime.now(),
 
     );
     if(selectDate != null){
@@ -33,6 +33,7 @@ class DobController extends GetxController {
     }
     update(["date"]);
   }
+
   @override
   void onInit() {
     isValidate = true;

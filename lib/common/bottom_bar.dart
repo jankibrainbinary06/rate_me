@@ -1,108 +1,10 @@
-// import 'package:flutter/material.dart';
-// import 'package:get/get.dart';
-// import '../../../../utils/asset_res.dart';
-// import '../../../../utils/colour_res.dart';
-// import '../dashboard_controller.dart';
-//
-// class BottomBar extends StatelessWidget {
-//   const BottomBar({Key? key}) : super(key: key);
-//
-//   @override
-//   Widget build(BuildContext context) {
-//     return GetBuilder<DashBoardController>(
-//       id: 'bottom_bar',
-//       builder: (controller) {
-//         return SafeArea(
-//           child: Container(
-//             decoration:  BoxDecoration(
-//               color: ColorRes.colorD9D9D9.withOpacity(0.26),
-//               borderRadius: BorderRadius.only(
-//                 topLeft: Radius.circular(50),
-//                 topRight: Radius.circular(50),
-//               ),
-//             ),
-//             child: Row(
-//               children: [
-//                 tab(AssetRes.home1,0),
-//                 tab(AssetRes.home2,1),
-//                 tab(AssetRes.home3,2),
-//                 tab(AssetRes.home4,3),
-//               ],
-//             ),
-//           ),
-//         );
-//       },
-//     );
-//   }
-//
-//   Widget tab(String icon1,int index) {
-//     return GetBuilder<DashBoardController>(
-//       id: 'bottom_bar',
-//       builder: (controller) {
-//         return Expanded(
-//           child: GestureDetector(
-//             onTap: () => controller.onBottomBarChange(index),
-//             child: Container(
-//               height: 69,
-//               width: Get.width,
-//               padding: const EdgeInsets.only(right: 30,left: 20),
-//               child: Column(
-//                 children: [
-//                   index == controller.currentTab ?
-//                   Container(
-//                     height: 5,
-//                     width: 61,
-//                     decoration: BoxDecoration(
-//                       borderRadius: BorderRadius.all(Radius.circular(4),),
-//                       gradient: LinearGradient(
-//                           colors:[
-//                             ColorRes.colorF2609E,
-//                             ColorRes.colorFFBEDA,
-//                             ColorRes.colorFF1478,
-//                           ]
-//                       ),
-//                     ),
-//                   ) : const SizedBox(),
-//                   const SizedBox(
-//                     height: 17,
-//                   ),
-//                   index == 3
-//                       ? Image.asset(
-//                     icon1,
-//                     height: 21,
-//                     fit: BoxFit.fitHeight,
-//                     color: index == controller.currentTab
-//                         ? ColorRes.black
-//                         : Colors.grey,
-//                   )
-//                       : Image.asset(
-//                     icon1,
-//                     height: 27,
-//                     width: 27,
-//                     fit: BoxFit.fitHeight,
-//                     color: index == controller.currentTab
-//                         ? ColorRes.black
-//                         : Colors.grey,
-//                   ),
-//                 ],
-//               ),
-//
-//             ),
-//           ),
-//         );
-//       },
-//     );
-//   }
-// }
-
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
+import '../screens/Dashboard/dashboard_controller.dart';
 import '../utils/asset_res.dart';
 import '../utils/colour_res.dart';
-import '../screens/screen/Dashboard/dashboard_controller.dart';
 
 Widget bottomNavigationBar2(BuildContext context) {
 
@@ -113,7 +15,7 @@ Widget bottomNavigationBar2(BuildContext context) {
       builder: (con) {
         return Container(
           width: Get.width,
-          height: Get.height * 0.081,
+          height: Get.height * 0.092,
             decoration:  BoxDecoration(
               color: ColorRes.white,
               boxShadow: [

@@ -72,12 +72,12 @@ class SchoolScreens extends StatelessWidget {
                                     FontRes.poppinsRegular,
                                     fontSize: 15),
                                 onChanged: (value) {
-                                  if (value.isEmpty) {
-                                    controller.isValidateSchool = false;
-                                  } else {
-                                    controller.isValidateSchool = true;
-                                  }
-                                  controller.update(["school"]);
+                                  // if (value.isEmpty) {
+                                  //   controller.isValidateSchool = false;
+                                  // } else {
+                                  //   controller.isValidateSchool = true;
+                                  // }
+                                  // controller.update(["school"]);
                                 },
                                 decoration: const InputDecoration(
                                   hintText: StringRes.schoolEmail,
@@ -97,7 +97,7 @@ class SchoolScreens extends StatelessWidget {
                               controller.isValidateSchool == true
                                   ? SizedBox()
                                   : Text(
-                                "Please enter your email  ",
+                                "Please enter valid email",
                                 style: TextStyle(
                                     fontSize: 12,
                                     fontFamily: FontRes
@@ -110,8 +110,7 @@ class SchoolScreens extends StatelessWidget {
                               commonButton(
                                 text: StringRes.verify,
                                 onTap: (){
-                                  return controller.validation(
-                                      controller.emailContoller.text);
+                                  return controller.validation();
                                 }
                               ),
                             ],

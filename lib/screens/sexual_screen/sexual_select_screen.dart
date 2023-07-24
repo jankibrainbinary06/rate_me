@@ -34,7 +34,7 @@ class SexualScreen extends StatelessWidget {
                 ),
                 appbar(),
                 SizedBox(
-                  height: Get.height * 0.06,
+                  height: Get.height * 0.04,
                 ),
                 SizedBox(
                   width: Get.width * 0.6,
@@ -42,7 +42,7 @@ class SexualScreen extends StatelessWidget {
                     StringRes.mySexual,
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                        fontSize: 32,
+                        fontSize: 27,
                         fontFamily: FontRes.poppinsRegular,
                         fontWeight: FontWeight.w600),
                   ),
@@ -58,7 +58,7 @@ class SexualScreen extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           SizedBox(
-                            height: Get.height * 0.09,
+                            height: Get.height * 0.03,
                           ),
                           DropdownButtonHideUnderline(
                             child: SizedBox(
@@ -120,7 +120,7 @@ class SexualScreen extends StatelessWidget {
                                       color: Colors.red),
                                 ),
                           SizedBox(
-                            height: Get.height * 0.1,
+                            height: Get.height * 0.070,
                           ),
                           commonButton(
                               text: StringRes.continueText,

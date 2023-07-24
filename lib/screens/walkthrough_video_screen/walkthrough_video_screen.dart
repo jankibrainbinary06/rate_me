@@ -4,6 +4,7 @@ import 'package:rate_me/common/CommonButton.dart';
 import 'package:rate_me/common/appBar.dart';
 import 'package:rate_me/common/common_back_arrow.dart';
 import 'package:rate_me/common/text_styles.dart';
+import 'package:rate_me/screens/Dashboard/dashboard_screen.dart';
 import 'package:rate_me/screens/walkthrough_video_screen/walkthrough_controller.dart';
 import 'package:rate_me/utils/asset_res.dart';
 import 'package:rate_me/utils/colour_res.dart';
@@ -85,26 +86,6 @@ class WalkThroughVideoScreen extends StatelessWidget {
                                     children: [
                                       VideoPlayer(controller
                                           .videoController),
-//                                     GestureDetector(
-//                                       onTap: () {
-//                                         controller.videoController.value.isPlaying
-//                                             ?  controller.videoController.pause()
-//                                             :  controller.videoController.play();
-//                                         controller.update(['videoPlayer']);
-//                                       },
-//                                       child: Container(
-//                                         height: 50,
-//                                         width: 50,
-// alignment: Alignment.center,
-//                                         decoration: BoxDecoration(
-//                                           color: Colors.white54,shape: BoxShape.circle,
-//                                         ),
-//                                         child: Icon(
-//                                           controller.videoController.value.isPlaying ? Icons.pause : Icons.play_arrow,
-//                                         ),
-//
-//                                       ),
-//                                     ),
                                     ])
                                     : SizedBox()
                                     : Image.asset(AssetRes.videoButton),
@@ -138,7 +119,9 @@ class WalkThroughVideoScreen extends StatelessWidget {
                         SizedBox(height: Get.height * 0.1,),
                         commonButton(
                           text: StringRes.continueText,
-                          onTap: (){}
+                          onTap: (){
+                            Get.offAll(()=>DashBoardScreen());
+                          }
                         ),
                         SizedBox(height: Get.height * 0.05,),
                       ],
@@ -151,40 +134,6 @@ class WalkThroughVideoScreen extends StatelessWidget {
               ),
             ],
           ),
-          // floatingActionButtonLocation:
-          // FloatingActionButtonLocation.centerDocked,
-          // floatingActionButton: Column(
-          //   mainAxisAlignment: MainAxisAlignment.end,
-          //   children: [
-          //     Card(
-          //       shape: RoundedRectangleBorder(
-          //           borderRadius: BorderRadius.circular(30)),
-          //       elevation: 0,
-          //       child: GestureDetector(
-          //         onTap: () {},
-          //         child: Container(
-          //           height: 45,
-          //           width: 300,
-          //           alignment: Alignment.center,
-          //           decoration: BoxDecoration(
-          //               color: ColorRes.commonButtonColor,
-          //               borderRadius: BorderRadius.circular(30)),
-          //           child: Text(
-          //             "CONTINUE",
-          //             style: const TextStyle(
-          //                 fontSize: 15,
-          //                 fontFamily: FontRes.poppinsMedium,
-          //                 fontWeight: FontWeight.w500,
-          //                 color: ColorRes.white),
-          //           ),
-          //         ),
-          //       ),
-          //     ),
-          //     SizedBox(
-          //       height: Get.height * 0.05,
-          //     ),
-          //   ],
-          // ),
         );
       },
     );

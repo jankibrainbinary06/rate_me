@@ -143,7 +143,7 @@ class GenderSelectScreen extends StatelessWidget {
                                         color:
                                         Colors.red),
                                   ),
-                                  SizedBox(height: Get.height * 0.1,),
+                                  SizedBox(height: Get.height * 0.050,),
                                   Card(
                                     shape: RoundedRectangleBorder(
                                         borderRadius:

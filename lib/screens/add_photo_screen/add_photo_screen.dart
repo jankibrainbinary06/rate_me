@@ -89,15 +89,16 @@ class AddPhotoScreen extends StatelessWidget {
                                         border: Border.all(
                                             color: ColorRes.colorC6C6C6,
                                             width: 3),
-                                        image: DecorationImage(
-                                          image: FileImage(
-                                            File(
-                                              controller.photoPath1.toString(),
+                                          image: DecorationImage(
+                                            image: FileImage(
+                                              File(
+                                                controller.photoPath1.toString(),
+                                              ),
                                             ),
-                                          ),
-                                          fit: BoxFit.cover,
-                                        ),
+                                            fit: BoxFit.fill,
+                                          )
                                       ),
+                               // child: Image.file(File(controller.photoPath1.toString(),),fit: BoxFit.fill,),
                                     ),
                               Stack(
                                 alignment: Alignment.bottomLeft,
@@ -157,15 +158,16 @@ class AddPhotoScreen extends StatelessWidget {
                                         border: Border.all(
                                             color: ColorRes.colorC6C6C6,
                                             width: 3),
-                                        image: DecorationImage(
-                                          image: FileImage(
-                                            File(
-                                              controller.photoPath2.toString(),
+                                          image: DecorationImage(
+                                            image: FileImage(
+                                              File(
+                                                controller.photoPath2.toString(),
+                                              ),
                                             ),
-                                          ),
-                                          fit: BoxFit.cover,
-                                        ),
+                                            fit: BoxFit.fill,
+                                          )
                                       ),
+                               // child: Image.file(File(controller.photoPath2.toString(),),fit: BoxFit.fill,),
                                     ),
                               Stack(
                                 alignment: Alignment.bottomLeft,
@@ -233,15 +235,16 @@ class AddPhotoScreen extends StatelessWidget {
                                         border: Border.all(
                                             color: ColorRes.colorC6C6C6,
                                             width: 3),
-                                        image: DecorationImage(
-                                          image: FileImage(
-                                            File(
-                                              controller.photoPath3.toString(),
+                                          image: DecorationImage(
+                                            image: FileImage(
+                                              File(
+                                                controller.photoPath3.toString(),
+                                              ),
                                             ),
-                                          ),
-                                          fit: BoxFit.cover,
-                                        ),
+                                            fit: BoxFit.fill,
+                                          )
                                       ),
+                                // child: Image.file(File(controller.photoPath3.toString(),),fit: BoxFit.fill,),
                                     ),
                               Stack(
                                 alignment: Alignment.bottomLeft,
@@ -301,15 +304,16 @@ class AddPhotoScreen extends StatelessWidget {
                                         border: Border.all(
                                             color: ColorRes.colorC6C6C6,
                                             width: 3),
-                                        image: DecorationImage(
-                                          image: FileImage(
-                                            File(
-                                              controller.photoPath4.toString(),
+                                          image: DecorationImage(
+                                            image: FileImage(
+                                              File(
+                                                controller.photoPath4.toString(),
+                                              ),
                                             ),
-                                          ),
-                                          fit: BoxFit.cover,
-                                        ),
+                                            fit: BoxFit.fill,
+                                          )
                                       ),
+                               // child: Image.file(File(controller.photoPath4.toString(),),fit: BoxFit.fill,),
                                     ),
                               Stack(
                                 alignment: Alignment.bottomLeft,
@@ -384,37 +388,7 @@ class AddPhotoScreen extends StatelessWidget {
 
             ],
           ),
-          // floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-          // floatingActionButton:        Column(
-          //   mainAxisAlignment: MainAxisAlignment.end,
-          //   children: [
-          //     Card(
-          //       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
-          //       elevation: 0,
-          //       child: GestureDetector(
-          //         onTap:(){
-          //
-          //         },
-          //         child: Container(
-          //           height:  45,
-          //           width: 300,
-          //           alignment: Alignment.center,
-          //           decoration: BoxDecoration(
-          //               color: ColorRes.commonButtonColor,
-          //               borderRadius: BorderRadius.circular(30)
-          //           ),
-          //           child:  Text(StringRes.Continue.toUpperCase(),style:
-          //           const TextStyle(
-          //               fontSize: 15,
-          //               fontFamily: FontRes.poppinsMedium,
-          //               fontWeight: FontWeight.w500,
-          //               color: ColorRes.white),),
-          //         ),
-          //       ),
-          //     ),
-          //     SizedBox(height: 20,),
-          //   ],
-          // ),
+
         );
       },
     );
