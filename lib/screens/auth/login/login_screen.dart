@@ -15,17 +15,14 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: ColorRes.colorF2609E,
-      body: SafeArea(
-        child: Container(
-          height: Get.height,
-          width: Get.width,
-          decoration: const BoxDecoration(
-              gradient: LinearGradient(
-                  begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter,
-                  colors: [Color(0xFFEFB8BF), Color(0xFFFF8EBE)])),
-          child: Column(
+      body: Stack(
+        children: [
+          SizedBox(
+            height:Get.height,
+            width: Get.width,
+            child: Image.asset(AssetRes.loginBg,fit: BoxFit.fill,),
+          ),
+          Column(
             children: [
               SizedBox(height: Get.height * 0.05),
               Image.asset(AssetRes.blackLogo, color: const Color(0xFFFF8EBE)),
@@ -49,9 +46,9 @@ class LoginScreen extends StatelessWidget {
                           decoration: TextDecoration.underline,
                           shadows: [
                             Shadow(
-                                blurRadius: 10.0,
-                                color: Colors.black12,
-                                offset: Offset(0, 5))
+                                blurRadius: 5,
+                                color: Colors.black26,
+                                offset: Offset(0, 4))
                           ])),
                   SizedBox(width: Get.width * 0.01),
                   const Text("and",
@@ -61,9 +58,9 @@ class LoginScreen extends StatelessWidget {
                           fontFamily: "Poppins-Medium",
                           shadows: [
                             Shadow(
-                                blurRadius: 10.0,
-                                color: Colors.black12,
-                                offset: Offset(0, 5))
+                                blurRadius: 5,
+                                color: Colors.black26,
+                                offset: Offset(0, 4))
                           ])),
                   SizedBox(width: Get.width * 0.01),
                   const Text("Cookies Policy.",
@@ -74,9 +71,9 @@ class LoginScreen extends StatelessWidget {
                           decoration: TextDecoration.underline,
                           shadows: [
                             Shadow(
-                                blurRadius: 10.0,
-                                color: Colors.black12,
-                                offset: Offset(0, 5))
+                                blurRadius: 5,
+                                color: Colors.black26,
+                                offset: Offset(0, 4))
                           ])),
                 ],
               ),
@@ -99,25 +96,25 @@ class LoginScreen extends StatelessWidget {
                           fontSize: 13,
                           shadows: [
                             Shadow(
-                                blurRadius: 10.0,
-                                color: ColorRes.colorFF373737,
-                                offset: Offset(1, 1))
+                                blurRadius: 5,
+                                color: Colors.black26,
+                                offset: Offset(0, 4))
                           ])),
                   SizedBox(width: Get.width * 0.01),
                   InkWell(
                     onTap: () {
-                      Get.to(()=>  PhoneVerificationScreen());
+                      Get.to(()=> PhoneVerificationScreen());
                     },
-                    child: const Text("Sign Up",
+                    child:  Text("Sign Up",
                         style: TextStyle(
                             fontSize: 13,
                             color: ColorRes.colorFFFFFF,
                             fontWeight: FontWeight.bold,
                             shadows: [
                               Shadow(
-                                  blurRadius: 20.0,
-                                  color: ColorRes.colorFF373737,
-                                  offset: Offset(1, 1))
+                                  blurRadius: 5,
+                                  color: Colors.black26,
+                                  offset: Offset(0, 4))
                             ])),
                   ),
                 ],
@@ -125,8 +122,9 @@ class LoginScreen extends StatelessWidget {
               SizedBox(height: Get.height * 0.05),
             ],
           ),
-        ),
+        ],
       ),
     );
+
   }
 }

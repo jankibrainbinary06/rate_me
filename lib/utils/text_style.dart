@@ -67,3 +67,30 @@ TextStyle bold({Color? color,
     letterSpacing: letterSpacing ?? 0,
   );
 }
+
+
+
+TextStyle w700TextStyle =  TextStyle(
+  fontSize: 15,
+  fontWeight: FontWeight.bold,
+  fontFamily: "Poppins-Bold",
+  color: ColorRes.white,
+  shadows: [
+    Shadow(
+      blurRadius: 4,
+      offset: Offset(0, 4),
+      color: ColorRes.white.withOpacity(0.25),
+    )],
+);
+
+TextStyle w400TextStyle =  TextStyle(
+  fontSize: 14,
+  fontFamily: "Poppins-Regular",
+  color: ColorRes.white,
+  shadows: [
+    Shadow(
+      blurRadius: 4,
+      offset: Offset(0, 2),
+      color: ColorRes.white.withOpacity(0.14),
+    )],
+);

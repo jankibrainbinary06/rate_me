@@ -15,10 +15,10 @@ class LoginController extends GetxController{
 
         boxShadow: [
           BoxShadow(
-              offset: Offset(0, 5),
-              blurRadius: 8,
+              offset: Offset(0, 3),
+              blurRadius: 3,
               // spreadRadius: 5,
-              color: Colors.black38,
+              color: Colors.black26,
           ),
         ],
       ),
@@ -42,10 +42,19 @@ class LoginController extends GetxController{
       children: [
         Text(
             title,
-            style : const TextStyle(fontSize: 12,color: ColorRes.colorFFFFFF,fontFamily: "Poppins-Medium",shadows: [Shadow(blurRadius: 10.0,color: Colors.black12,offset: Offset(0, 5))]),
+            style : const TextStyle(fontSize: 12,color: ColorRes.colorFFFFFF,
+                fontFamily: "Poppins-Medium",shadows: [Shadow(
+                blurRadius: 5,
+                color: Colors.black26,
+                offset: Offset(0, 4))]),
+
         ),
         SizedBox(width: Get.width * 0.01),
-        Text(title2, style: const TextStyle(fontSize: 12,color: ColorRes.colorFFFFFF, fontWeight: FontWeight.bold,decoration: TextDecoration.underline)),
+        Text(title2, style: const TextStyle(fontSize: 12,color: ColorRes
+            .colorFFFFFF, fontWeight: FontWeight.bold,decoration: TextDecoration.underline,shadows: [Shadow(
+            blurRadius: 5,
+            color: Colors.black26,
+            offset: Offset(0, 4))])),
       ],
     );
   }

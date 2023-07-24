@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:rate_me/screens/add_photo_screen/add_photo_screen.dart';
-import 'package:rate_me/screens/auth/login/login_screen.dart';
-import 'package:rate_me/screens/phone_verification/screen/phone_varification_screen.dart';
-import 'package:rate_me/screens/walkthrough_video_screen/walkthrough_video_screen.dart';
-void main() {
+import 'package:rate_me/screens/splash/splash_screen.dart';
 
-  SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
-      statusBarColor: Colors.transparent, // status bar color
-      statusBarIconBrightness: Brightness.dark));
+import 'screens/add_photo_screen/add_photo_screen.dart';
+
+
+void main() {
+  // SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
+  //     statusBarColor: Colors.transparent, // status bar color
+  //     statusBarIconBrightness: Brightness.dark));
   runApp(const MyApp());
 }
 
@@ -18,9 +17,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  GetMaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: WalkThroughVideoScreen(),
+      home: SplashScreen(),
+      title: "Rate_me",
     );
   }
 }
+
