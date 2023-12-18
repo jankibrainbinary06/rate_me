@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:rate_me/screens/auth/login/login_screen.dart';
-import 'package:rate_me/screens/splash/splash_screen2.dart';
 import 'package:rate_me/utils/asset_res.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -15,8 +14,8 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   void initState() {
-    Future.delayed(const Duration(seconds: 1), () {
-      Get.to(() => const SplashScreen2());
+    Future.delayed(const Duration(seconds: 2), () {
+      Get.offAll(() => LoginScreen());
     });
     // TODO: implement initState
     super.initState();
@@ -24,14 +23,10 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: SafeArea(
-        child: SizedBox(
-          height: Get.height,
-          width: Get.width,
-          child: Image.asset(AssetRes.first,fit: BoxFit.cover),
-        ),
-      ),
+    return SizedBox(
+      height: Get.height * 1,
+      width: Get.width * 1,
+      child:  Image.asset(AssetRes.first,fit: BoxFit.cover),
     );
   }
 }
